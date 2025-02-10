@@ -19,7 +19,7 @@ export default function Navbar() {
   }
 
   function handleNavClick() {
-    setIsOpen(false); // Close the mobile menu on navigation
+    setIsOpen(false); 
   }
 
   return (

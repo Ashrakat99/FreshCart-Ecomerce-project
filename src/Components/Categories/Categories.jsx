@@ -21,7 +21,7 @@ export default function Categories() {
 
   async function getCategoryDetails(id) {
     setModalLoading(true);
-    setSelectedCategory(null); // Ensures modal is reset before loading
+    setSelectedCategory(null); 
     try {
       let { data } = await axios.get(`https://ecommerce.routemisr.com/api/v1/categories/${id}`);
       setSelectedCategory(data.data);

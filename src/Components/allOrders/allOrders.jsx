@@ -16,7 +16,7 @@ export default function Allorders() {
                 getOrders(id);
             } catch (error) {
                 console.error("Invalid token:", error);
-                localStorage.removeItem("usertoken"); // Remove invalid token
+                localStorage.removeItem("usertoken"); 
             }
         } else {
             console.error("No token found in localStorage");

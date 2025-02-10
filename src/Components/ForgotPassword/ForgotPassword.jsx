@@ -24,13 +24,13 @@ export default function ForgotPassword() {
         onSubmit: async (values) => {
             try {
                 setLoading(true);
-                setError(null); // Clear previous errors
+                setError(null); 
                 const response = await axios.post(
                     "https://ecommerce.routemisr.com/api/v1/auth/forgotPasswords",
                     { email: values.email }
                 );
                 console.log("Response:", response.data);
-                navigate("/ResetPassword"); // Redirect to reset password page
+                navigate("/ResetPassword"); 
             } catch (error) {
                 setError(error.response?.data?.message || "Something went wrong!");
             } finally {

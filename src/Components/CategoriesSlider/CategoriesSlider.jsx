@@ -11,17 +11,16 @@ export default function CategoriesSlider() {
     const settings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 6, // Default for large screens
-        slidesToScroll: 1,
+        slidesToShow: 6, 
         arrows: false,
         dots: false,
         responsive: [
             {
-                breakpoint: 1024, // Medium screens (md)
+                breakpoint: 1024, 
                 settings: { slidesToShow: 4 },
             },
             {
-                breakpoint: 768, // Small screens (sm)
+                breakpoint: 768, 
                 settings: { slidesToShow: 2 },
             },
         ],
@@ -55,7 +54,7 @@ export default function CategoriesSlider() {
                 <p className="text-center text-gray-500">Loading categories...</p>
             )}
 
-            {/* Navigation Buttons */}
+            
             <div className="flex justify-center mt-4 space-x-4">
                 <button
                     onClick={() => sliderRef.current?.slickPrev()}

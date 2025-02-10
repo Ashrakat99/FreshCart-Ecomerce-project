@@ -20,7 +20,7 @@ export default function Cart() {
     let { data } = await deleteCartItem(id);
     setCart(data);
     setCountt(data.numOfCartItems);
-    setGlobalLoading(false); // Stop loading
+    setGlobalLoading(false); 
   }
 
   async function updateItem(id, count) {

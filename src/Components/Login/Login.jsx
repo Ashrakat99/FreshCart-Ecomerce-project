@@ -8,7 +8,6 @@ export default function Login() {
   const [apiError, setApiError] = useState(null);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  // const { userToken, setUserToken } = useContext(UserContext);
   const userContext = useContext(UserContext);
   console.log(userContext); 
   const setUserToken = userContext?.setUserToken; 
@@ -22,7 +21,7 @@ export default function Login() {
     }
   }, [setUserToken, navigate]);
 
-  // Login function to handle API call
+
   async function login(values) {
     try {
       setLoading(true);

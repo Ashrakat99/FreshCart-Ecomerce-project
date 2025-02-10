@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../context/CartContext.jsx";
-import toast from "react-hot-toast";
 import { useFormik } from 'formik';
 
 export default function ShippingAddress() {
