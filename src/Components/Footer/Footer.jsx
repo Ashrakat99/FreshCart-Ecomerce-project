@@ -18,20 +18,26 @@ const FreshCartApp = () => {
           Share App Link
         </button>
       </div>
-      <div className="mt-6 border-t pt-4 flex justify-between items-center">
-        <div className="flex gap-3">
-          <h3 className="font-semibold font-3xl">Payment Partners</h3>
-          <img src="src\assets\images\amazonpay-logo-rgb-clr.svg" alt="Amazon Pay" className="h-4" />
-          <img src="src\assets\images\dls-logo-bluebox-solid.svg" alt="American Express" className="h-10 w-16" />
-          <img src="src\assets\images\MClogo-c823e495c5cf455c89ddfb0e17fc7978.jpg" alt="Mastercard" className="h-10 w-24" />
-          <img src="src\assets\images\paypal.png" alt="PayPal" className="h-8 w-8" />
+      <div className="mt-6 border-t pt-4 flex flex-col md:grid md:grid-cols-2 lg:flex-row lg:justify-between lg:items-center gap-4">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-3 text-center lg:text-left">
+          <h3 className="font-semibold text-lg sm:text-xl mx-auto lg:mx-0">Payment Partners</h3>
+          <div className="flex flex-wrap justify-center lg:justify-start gap-3 mt-2 lg:mt-0">
+            <img src="src/assets/images/amazonpay-logo-rgb-clr.svg" alt="Amazon Pay" className="h-4 sm:h-6" />
+            <img src="src/assets/images/dls-logo-bluebox-solid.svg" alt="American Express" className="h-10 w-16 sm:h-12 sm:w-20" />
+            <img src="src/assets/images/MClogo-c823e495c5cf455c89ddfb0e17fc7978.jpg" alt="Mastercard" className="h-10 w-24 sm:h-12 sm:w-28" />
+            <img src="src/assets/images/paypal.png" alt="PayPal" className="h-8 w-8 sm:h-10 sm:w-10" />
+          </div>
         </div>
-        <div className="flex gap-3">
-          <h3 className="font-semibold font-3xl">Get deleviries with FreshCart</h3>
-          <img src="src\assets\images\download-on-the-app-store.svg" alt="App Store" className="h-8" />
-          <img src="src\assets\images\image.png" alt="Google Play" className="h-8" />
+        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-3 text-center lg:text-left">
+          <h3 className="font-semibold text-lg sm:text-xl mx-auto lg:mx-0">Get deliveries with FreshCart</h3>
+          <div className="flex flex-wrap justify-center lg:justify-start gap-3 mt-2 lg:mt-0">
+            <img src="src/assets/images/download-on-the-app-store.svg" alt="App Store" className="h-8 sm:h-10" />
+            <img src="src/assets/images/image.png" alt="Google Play" className="h-8 sm:h-10" />
+          </div>
         </div>
-      </div>
+
+</div>
+
       </div>
     </div>
   );
