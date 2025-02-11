@@ -1,4 +1,11 @@
 import React from "react";
+import amazonPay from "../../assets/images/amazonpay-logo-rgb-clr.svg";
+import americanExpress from "../../assets/images/dls-logo-bluebox-solid.svg";
+import mastercard from "../../assets/images/MClogo-c823e495c5cf455c89ddfb0e17fc7978.jpg";
+import paypal from "../../assets/images/paypal.png";
+import appStore from "../../assets/images/download-on-the-app-store.svg";
+import googlePlay from "../../assets/images/image.png";
+
 
 const FreshCartApp = () => {
   return (
@@ -22,17 +29,17 @@ const FreshCartApp = () => {
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-3 text-center lg:text-left">
           <h3 className="font-semibold text-lg sm:text-xl mx-auto lg:mx-0">Payment Partners</h3>
           <div className="flex flex-wrap justify-center lg:justify-start gap-3 mt-2 lg:mt-0">
-            <img src="src/assets/images/amazonpay-logo-rgb-clr.svg" alt="Amazon Pay" className="h-4 sm:h-6" />
-            <img src="src/assets/images/dls-logo-bluebox-solid.svg" alt="American Express" className="h-10 w-16 sm:h-12 sm:w-20" />
-            <img src="src/assets/images/MClogo-c823e495c5cf455c89ddfb0e17fc7978.jpg" alt="Mastercard" className="h-10 w-24 sm:h-12 sm:w-28" />
-            <img src="src/assets/images/paypal.png" alt="PayPal" className="h-8 w-8 sm:h-10 sm:w-10" />
+            <img src={amazonPay} alt="Amazon Pay" className="h-4 sm:h-6" />
+            <img src={americanExpress} alt="American Express" className="h-10 w-16 sm:h-12 sm:w-20" />
+            <img src={mastercard} alt="Mastercard" className="h-10 w-24 sm:h-12 sm:w-28" />
+            <img src={paypal} alt="PayPal" className="h-8 w-8 sm:h-10 sm:w-10" />
           </div>
         </div>
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-3 text-center lg:text-left">
           <h3 className="font-semibold text-lg sm:text-xl mx-auto lg:mx-0">Get deliveries with FreshCart</h3>
           <div className="flex flex-wrap justify-center lg:justify-start gap-3 mt-2 lg:mt-0">
-            <img src="src/assets/images/download-on-the-app-store.svg" alt="App Store" className="h-8 sm:h-10" />
-            <img src="src/assets/images/image.png" alt="Google Play" className="h-8 sm:h-10" />
+            <img src={appStore} alt="App Store" className="h-8 sm:h-10" />
+            <img src={googlePlay} alt="Google Play" className="h-8 sm:h-10" />
           </div>
         </div>
 
