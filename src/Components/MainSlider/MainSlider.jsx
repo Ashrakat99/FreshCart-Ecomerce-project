@@ -1,10 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import slide1 from "../../assets/images/1.jpg";
-import slide2 from "../../Assets/images/2.jpg";
-import slide3 from "../../Assets/images/3.jpg";
-import img1 from "../../Assets/images/XCM_Manual_1396328_4379575_Egypt_EG_BAU_GW_DC_SL_Bags_Wallets_379x304_1X._SY304_CB650636675_.jpg";
-import img2 from "../../Assets/images/XCM_Manual_1533480_5305769_379x304_1X._SY304_CB616236518_.jpg";
+import slide2 from "../../assets/images/2.jpg";
+import slide3 from "../../assets/images/3.jpg";
+import img1 from "../../assets/images/XCM_Manual_1396328_4379575_Egypt_EG_BAU_GW_DC_SL_Bags_Wallets_379x304_1X._SY304_CB650636675_.jpg";
+import img2 from "../../assets/images/XCM_Manual_1533480_5305769_379x304_1X._SY304_CB616236518_.jpg";
 
 export default function MainSilder() {
     const settings = {
