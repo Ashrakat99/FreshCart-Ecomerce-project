@@ -19,26 +19,52 @@ import CartContextProvider from './context/CartContext.jsx'
 import WishList from './Components/WishList/WishList.jsx'
 import ShippingAddress from './Components/ShippingAddress/ShippingAddress.jsx'
 import Allorders from './Components/allOrders/allOrders.jsx'
+import { Navigate } from 'react-router-dom'
 
 
+// let routers = createBrowserRouter([{
+//   path:'' , element : <Layout/>,children:[
+//     {path:'Register' , element: <Register/>},
+//     {path:'login' , element: <Login/>},
+//     {path:'ForgotPassword' , element: <ForgotPassword/>},
+//     {path:'ResetPassword' , element: <ResetPassword/>},
+//     {path:'Home' , index: true , element: <ProtectedRoute><Home/></ProtectedRoute>},
+//     {path:'cart' , element: <ProtectedRoute><Cart/></ProtectedRoute>},
+//     {path:'Wishlist' , element: <ProtectedRoute><WishList/></ProtectedRoute>},
+//     {path:'brands' , element: <ProtectedRoute><Brands/></ProtectedRoute>},
+//     {path:'categories' , element: <ProtectedRoute><Categories/></ProtectedRoute>},
+//     {path:'products' , element:<ProtectedRoute><Products/></ProtectedRoute>},
+//     {path:'ProductDetails/:id' , element:<ProtectedRoute><ProductDetails/></ProtectedRoute>},
+//     {path:'ShippingAddress/:id' , element:<ProtectedRoute><ShippingAddress/></ProtectedRoute>},
+//     {path:'AllOrders' , element: <ProtectedRoute><Allorders/></ProtectedRoute>},
+//     {path:'*' , element: <NotFound/>},
+//   ]
+// }])
 let routers = createBrowserRouter([{
-  path:'' , element : <Layout/>,children:[
-    {path:'Register' , element: <Register/>},
-    {path:'login' , element: <Login/>},
-    {path:'ForgotPassword' , element: <ForgotPassword/>},
-    {path:'ResetPassword' , element: <ResetPassword/>},
-    {path:'Home' , index: true , element: <ProtectedRoute><Home/></ProtectedRoute>},
-    {path:'cart' , element: <ProtectedRoute><Cart/></ProtectedRoute>},
-    {path:'Wishlist' , element: <ProtectedRoute><WishList/></ProtectedRoute>},
-    {path:'brands' , element: <ProtectedRoute><Brands/></ProtectedRoute>},
-    {path:'categories' , element: <ProtectedRoute><Categories/></ProtectedRoute>},
-    {path:'products' , element:<ProtectedRoute><Products/></ProtectedRoute>},
-    {path:'ProductDetails/:id' , element:<ProtectedRoute><ProductDetails/></ProtectedRoute>},
-    {path:'ShippingAddress/:id' , element:<ProtectedRoute><ShippingAddress/></ProtectedRoute>},
-    {path:'AllOrders' , element: <ProtectedRoute><Allorders/></ProtectedRoute>},
-    {path:'*' , element: <NotFound/>},
+  path: '', 
+  element: <Navigate to="/login" replace /> 
+}, {
+  path: '', 
+  element: <Layout />, 
+  children: [
+    { path: 'Register', element: <Register /> },
+    { path: 'login', element: <Login /> },
+    { path: 'ForgotPassword', element: <ForgotPassword /> },
+    { path: 'ResetPassword', element: <ResetPassword /> },
+    { path: 'Home', index: true, element: <ProtectedRoute><Home /></ProtectedRoute> },
+    { path: 'cart', element: <ProtectedRoute><Cart /></ProtectedRoute> },
+    { path: 'Wishlist', element: <ProtectedRoute><WishList /></ProtectedRoute> },
+    { path: 'brands', element: <ProtectedRoute><Brands /></ProtectedRoute> },
+    { path: 'categories', element: <ProtectedRoute><Categories /></ProtectedRoute> },
+    { path: 'products', element: <ProtectedRoute><Products /></ProtectedRoute> },
+    { path: 'ProductDetails/:id', element: <ProtectedRoute><ProductDetails /></ProtectedRoute> },
+    { path: 'ShippingAddress/:id', element: <ProtectedRoute><ShippingAddress /></ProtectedRoute> },
+    { path: 'AllOrders', element: <ProtectedRoute><Allorders /></ProtectedRoute> },
+    { path: '*', element: <NotFound /> },
   ]
-}])
+}]);
+
+
 function App() {
 
   return <>
